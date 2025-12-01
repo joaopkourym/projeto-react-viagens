@@ -1,4 +1,5 @@
 import styles from "../styles/Home.module.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -16,18 +17,24 @@ function Home() {
       </div>
 
       <div className={styles.grid}>
+      <Link to= "/destinos">
         <div className={styles.card}>
           <h2>Destinos</h2>
           <p>Conheça cidades e regiões muito procuradas por viajantes.</p>
         </div>
-        <div className={styles.card}>
+      </Link>
+      <Link to= "/pacotes">
+      <div className={styles.card}>
           <h2>Pacotes</h2>
           <p>Veja exemplos de pacotes com roteiros completos.</p>
         </div>
+      </Link>
+      <Link to= "/sobre">
         <div className={styles.card}>
           <h2>Sobre</h2>
           <p>Entenda como o sistema foi construído com React e Vite.</p>
         </div>
+      </Link>
       </div>
     </section>
   );
